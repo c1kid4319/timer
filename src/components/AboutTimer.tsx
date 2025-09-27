@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Users, Award, Target, ArrowRight } from 'lucide-react';
+import { Heart, Users, Award, Target, ArrowRight, Play } from 'lucide-react';
 
 const AboutTimer = () => {
   const features = [
@@ -30,9 +30,9 @@ const AboutTimer = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
             <div className="mb-6">
               <span className="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold">
@@ -59,7 +59,8 @@ const AboutTimer = () => {
             </button>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
@@ -76,6 +77,77 @@ const AboutTimer = () => {
                 </p>
               </div>
             ))}
+            </div>
+            
+            {/* Background Medical Students Image */}
+            <div className="absolute -top-10 -right-10 w-80 h-80 opacity-10 pointer-events-none">
+              <img 
+                src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="Medical Students" 
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        
+        {/* Medical Students Gallery Section */}
+        <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 lg:p-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Medical Students in Action</h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Witness the dedication and excellence of our medical students as they learn, research, and serve the community
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative group overflow-hidden rounded-xl">
+              <img 
+                src="https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="Medical students in clinical training" 
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-semibold">Clinical Training</h4>
+                  <p className="text-sm">Hands-on patient care experience</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-xl">
+              <img 
+                src="https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="Medical students in laboratory" 
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-semibold">Laboratory Research</h4>
+                  <p className="text-sm">Advanced medical research</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-xl">
+              <img 
+                src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="Medical students studying" 
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-semibold">Academic Excellence</h4>
+                  <p className="text-sm">Collaborative learning environment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center mx-auto transition-all duration-300 transform hover:scale-105">
+              <Play className="mr-2 h-5 w-5" />
+              Watch Campus Life Video
+            </button>
           </div>
         </div>
       </div>

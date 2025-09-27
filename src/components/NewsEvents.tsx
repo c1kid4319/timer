@@ -9,7 +9,7 @@ const NewsEvents = () => {
       excerpt: 'TIMER inaugurates state-of-the-art research facility to advance medical education and healthcare innovation.',
       date: '2024-01-15',
       category: 'Research',
-      image: 'https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg?auto=compress&cs=tinysrgb&w=400',
       icon: <BookOpen className="h-5 w-5" />
     },
     {
@@ -18,7 +18,7 @@ const NewsEvents = () => {
       excerpt: 'Join us for our annual medical conference featuring renowned speakers and latest healthcare innovations.',
       date: '2024-01-20',
       category: 'Event',
-      image: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=400',
       icon: <Users className="h-5 w-5" />
     },
     {
@@ -27,7 +27,7 @@ const NewsEvents = () => {
       excerpt: 'Recognition for outstanding contribution to medical education and maintaining highest academic standards.',
       date: '2024-01-10',
       category: 'Achievement',
-      image: 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=400',
       icon: <Award className="h-5 w-5" />
     }
   ];
